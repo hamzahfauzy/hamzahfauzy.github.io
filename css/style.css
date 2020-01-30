@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	background-color: #f4f9ff;
+	/*background-color: #e3e7ec;*/
+	font-size: 14px;
+	line-height: 2;
+}
+
+.fancy-container{
+	max-width: 1020px;
+	overflow: auto;
+	margin:auto;
+}
+
+.fancy {
+	box-shadow: 
+		-3px -3px 10px 3px rgba(255,255,255,1),
+		3px 3px 10px 3px rgba(68,143,160,.30);
+    border:0px;
+    border-radius: .5em;
+    background-color: #FFF;
+}
+
+.fancy.container-fancy p a {
+	color:blue;
+	text-decoration: none;
+}
+
+.fancy-btn {
+	text-decoration: none;
+	border:0px;
+	border-radius: 5em;
+	padding: 15px;
+	background-color: #FFF;
+	font-weight: 800;
+	text-align: left;
+	color: #333;
+	box-sizing: border-box;
+}
+
+.fancy-btn-block {
+	width: 100%;
+	display: block;
+}
+
+.fancy-btn-group {
+	box-shadow: -3px -3px 10px 3px rgba(255,255,255,1);
+}
+
+.fancy-btn-group .fancy-btn {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	border-radius: 0;
+	box-shadow: 8px 8px 6px 0 rgba(68,143,160,0.2);
+	box-sizing: border-box;
+}
+
+.fancy-btn-group .fancy-btn:first-child {
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+.fancy-btn-group .fancy-btn:last-child {
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+}
+
+.fancy-btn-group .fancy-btn:not(:last-child) {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.fancy-btn-group .fancy-btn:hover, .fancy-btn-group-active {
+    cursor: pointer;
+	box-shadow: 
+		inset 0px 5px 6px 0px rgba(68,143,160, 0.25),
+		inset 0px -3px 6px 0px rgba(68,143,160, 0.12),
+		8px 8px 6px 0 rgba(68,143,160,0.1) !important;
+	color:blue !important;
+}
+
+
+.fancy-btn:hover, .fancy-btn-active {
+    cursor: pointer;
+	box-shadow: none;
+	box-shadow: 
+		inset 3px 3px 6px 0px rgba(68,143,160, 0.25), 
+		inset -3px -3px 4px 0px rgba(255,255,255, 0.1), 
+		8px 8px 6px 0 rgba(68,143,160,0.1) !important;
+	color:blue !important;
+}
+
+nav.clean-fancy {
+	box-shadow: 0px 5px 10px 0 rgba(68,143,160,0.1);
+	background-color: #FFF;
+	padding: 5px;
+	display: block;
+	height: 78px;
+	transition: height 0.5s linear 0s;
+}
+
+nav.clean-fancy .nav-container {
+	overflow: hidden;
+}
+
+nav.clean-fancy .nav-brand {
+	float: left;
+	height: 50px;
+	display: inline-block;
+}
+
+nav.clean-fancy .nav-brand img {
+	height: 50px;
+	width: 100px;
+	object-fit: contain;
+	object-position: center;
+}
+
+nav.clean-fancy .nav-item-container {
+	float: right;
+	margin:10px;
+	display: inline-block;
+	transition: all 0.5s linear 0s;
+}
+
+nav.clean-fancy .nav-item-container ul.nav-item {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+
+nav.clean-fancy .nav-item-container ul.nav-item li {
+	display: inline-block;
+	margin:0px;
+	padding:0px;
+}
+
+nav.clean-fancy .nav-item-container ul.nav-item li a {
+	display: inline-block;
+	padding:10px;
+	text-decoration: none;
+	color: #333;
+	font-weight: 800;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	letter-spacing: 1px;
+}
+
+nav.clean-fancy .nav-item-container ul.nav-item li a:hover, .nav-active {
+	border-radius: 5em;
+	box-shadow: none;
+	box-shadow: 
+		inset 3px 3px 4px 0px rgba(68,143,160, 0.19), 
+		inset -8px -8px 4px 0 rgba(255, 255, 255, .15),
+		8px 8px 6px 0 rgba(68,143,160, .15);
+	color:blue !important;
+}
+
+nav.clean-fancy-fix {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav-scale-down {
+	height: 50px !important;
+}
+
+.nav-item-scale-down {
+	margin-top: 0px !important;
+	font-size: 12px;
+}
+
+.left-sidebar {
+	float: left;
+	display: inline-block;
+	width: 33%;
+}
+
+.left-sidebar .author {
+	width: 150px;
+	height: 200px;
+	overflow: hidden;
+	margin:auto;
+}
+
+.left-sidebar .author img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.content {
+	display: inline-block;
+	float: right;
+	width: 67%;
+}
+
+.content .fancy.container-fancy {
+	margin-left: 20px;
+	padding: 15px;
+}
+
+.content p {
+	text-align: justify;
+}
+
+.fa {
+	color:blue;
+}
