@@ -48,31 +48,31 @@
 			<a href="" class="fancy-btn fancy-btn-block">
 				KEAHLIAN YANG DIMILIKI
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> HTML dan CSS
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> Javascript (JQuery, VanillaJS, VueJS)
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> NodeJS
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> PHP (Yii2, Laravel, CodeIgniter)
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> Wordpress
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> MySQL
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> Linux (Ubuntu/Debian)
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> Mikrotik
 			</a>
-			<a href="" class="fancy-btn fancy-btn-block">
+			<a href="" class="fancy-btn fancy-btn-block fancy-not-active">
 				<i class="fa fa-fw fa-lg fa-check"></i> GIT
 			</a>
 		</div>
@@ -149,7 +149,7 @@ window.onscroll = (evt) => {
 document.addEventListener('click', function (event) {
 
 	// If the clicked element doesn't have the right selector, bail
-	if (event.target.matches('.fancy-btn-group .fancy-btn'))
+	if (event.target.matches('.fancy-btn-group .fancy-btn.fancy-not-active'))
 	{
 		var fancy = document.querySelectorAll('.fancy-btn-group .fancy-btn')
 		fancy.forEach(el => {
